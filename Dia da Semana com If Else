@@ -1,0 +1,42 @@
+package com.italo;
+
+import java.util.Scanner;
+
+
+public class DiaSemana {
+
+  public static void main(String[] args) {
+
+Scanner scan = new Scanner(System.in);
+
+System.out.println("Digite o dia da Semana: " );
+
+
+int diaSemana = scan.nextInt();
+ if (diaSemana == 1){
+   System.out.println("Será Domingo");
+   
+ }else if (diaSemana == 2 ){
+   System.out.println("Será Segunda-Feira");
+  }else if (diaSemana == 3 ){
+   System.out.println("Será Terça-Feira");
+  
+   }else if (diaSemana == 4 ){
+   System.out.println("Será Quarta-Feira");
+   
+   }else if (diaSemana == 5 ){
+   System.out.println("Será Quinta-Feira");
+   
+   }else if (diaSemana == 6 ){
+   System.out.println("Será Sexta-Feira");
+   
+   }else if (diaSemana == 7 ){
+   System.out.println("Será Sábado");
+   
+   }else {
+     System.out.println("Este dia da semana não existe!");
+   }
+   
+}
+
+}

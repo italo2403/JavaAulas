@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author Italo
+ */
+public class Salario {
+        public static void main (String [] args){
+    
+    Scanner scan = new Scanner(System.in);
+        System.out.println("Digite o seu Salário: ");
+        double salario = scan.nextDouble();
+        
+        System.out.println("Quantos dias você trabalhou?   ");
+        double dias = scan.nextDouble();
+        
+        double valorDia = salario / dias;
+        double inss = (salario/100)*8;
+        double sindicato = (salario/100)*5;
+        double ir = (salario/100)*11;
+        double totaldescontos = inss + sindicato + ir;
+        double salarioLiquido = salario - totaldescontos;
+        
+        System.out.println("Salário " + salario );
+        System.out.println("Valor dia" + " " + valorDia);
+        System.out.println("INSS " + inss);
+        System.out.println("Sindicato " + sindicato);
+        System.out.print("IR  " + ir);
+        System.out.println("Total Descontos " + " " + totaldescontos); 
+        System.out.println("Salário Liquído " + salarioLiquido );
+     
+        
+        }
+    
+    
+      }
